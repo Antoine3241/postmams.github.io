@@ -7,21 +7,39 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #1e1e1e; /* Dark background */
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* Subtle texture */
             margin: 0;
             padding: 20px;
+            color: #ffffff; /* White text for contrast */
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #00bfff; /* Bright blue for the title */
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .menu {
             display: flex;
             justify-content: center;
             margin: 20px 0;
+            flex-wrap: wrap;
         }
         .menu-item {
             margin: 0 15px;
+            background: rgba(30, 30, 30, 0.8); /* Darker card background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            width: 200px; /* Fixed width for uniformity */
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            text-align: center;
+            color: #00bfff; /* Bright blue for subheadings */
         }
         button {
             padding: 10px 20px;
@@ -29,12 +47,15 @@
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            background-color: #007BFF;
+            background-color: #007BFF; /* Button color */
             color: white;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            display: block;
+            margin: 0 auto;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05);
         }
     </style>
 </head>
